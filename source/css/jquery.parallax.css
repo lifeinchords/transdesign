@@ -1,0 +1,19 @@
+
+.parallax-layer {
+    position: absolute;
+}
+
+
+.parallax-viewport {
+	position: relative;     /* relative, absolute, fixed */
+    overflow: hidden;
+	width: 100%;
+	max-width: 2000px;
+	height: 2000px;
+	background-color: #aebcc9;
+}
+
+
+small {
+	text-transform: uppercase;
+}
