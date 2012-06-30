@@ -1,16 +1,19 @@
-  
+	
 .parallax-viewport#parallax
-  .parallax-layer
-    %img{ :src => "images/deck.png", :style => "width:1936px; height:2592px;" }
-  .parallax-layer{ :style => "width:3000px; height:2382px;" }
-    %img{ :src => "images/stripe.png", :style => "position:absolute; left:0; top:-12px;" }
+	.parallax-layer
+		%img{ :src => "images/deck.jpg", :style => "width:1936px; height:2592px;" }
+	.parallax-layer{ :style => "width:3000px; height:2382px;" }
+		%img{ :src => "images/stripe.png", :style => "position:absolute; left:100px; top:-300px;" }
 
 .content
-  %h1
-    Transdisciplinary Design: Year 0.
-  %img{ :src => 'images/illustration.png', :height => '400', :width => '800' } 
-  %p
-    Transdisciplinarity connotes a research strategy that crosses many disciplinary boundaries to create a holistic approach. It applies to research efforts focused on problems that cross the boundaries of two or more disciplines, such as research on effective information systems for biomedical research (see bioinformatics), and can refer to concepts or methods that were originally developed by one discipline, but are now used by several others, such as ethnography, a field research method originally developed in anthropology but now widely used by other disciplines
-  %h2 The Intrepid Pioneers
-  %p Eulani Labay
-  %p Steven J. Dale
+	.box
+		%h1 Transdisciplinary Design: Year 0.
+	.box
+		%img{ :src => 'images/illustration.png', :height => '400', :width => '800' } 
+	.box
+		%p Transdisciplinarity connotes a research strategy that crosses many disciplinary boundaries to create a holistic approach. It			applies to research efforts focused on problems that cross the boundaries of two or more disciplines, such as research on effective information systems for biomedical research (see bioinformatics), and can refer to concepts or methods that were originally developed by one discipline, but are now used by several others, such as ethnography, a field research method originally developed in anthropology but now widely used by other disciplines
+	.box
+		%h2 
+			The Intrepid Pioneers
+		- ["eulani", "rachel", "bland"].each do |name|
+			= partial("partials/person", :locals => {:name => name}) 
