@@ -83,4 +83,28 @@ a {
 
 #main { }
 
+.content			{ 
+	margin: 0 0 0 200px;
+	position: relative;
+	top: 200px;
+	background: white;
+	padding: 30px;
+}
 
+.content h1,
+.content h2,
+.content h3,
+.content h4 { font-family: 'Viga', sans-serif; color: #ff8b75; }
+
+.content h1 { font-size:40px; margin:0 0 40px 0; }
+.content h2 { font-size:30px; margin:0 0 40px 0; }
+
+.content p { font-family: 'EB Garamond', serif;
+
+line-height: 25px;
+width: 753px;
+font-size: 20px;
+margin: 20px 0 20px 0;
+
+
+}
