@@ -1,3 +1,6 @@
+set :haml, :layout_engine => :erb
+
+
 ### 
 # Compass
 ###
@@ -68,13 +71,20 @@
 # Change the images directory
 # set :images_dir, "alternative_image_directory"
 
+
+# pretty urls, requires Rack server
+# require "rack/contrib/try_static"
+# use Rack::TryStatic, :root => "build", :urls => %w[/], :try => ['.html']
+
+
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
   # activate :minify_css
   
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
   
   # Enable cache buster
   # activate :cache_buster
