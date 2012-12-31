@@ -3,3 +3,4 @@
 *.swo
 Gemfile.lock
 .sass-cache/*
+.sass_cache/*
